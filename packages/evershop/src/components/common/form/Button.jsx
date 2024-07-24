@@ -4,17 +4,18 @@ import React from 'react';
 import './Button.scss';
 
 function Button({
-  title,
-  outline = false,
-  variant = 'primary',
-  onAction,
-  url = undefined,
-  isLoading = false,
-  type = 'button'
-}) {
-  const className = ['button', variant];
-  if (outline === true) className.push('outline');
-  if (isLoading === true) className.push('loading');
+                  title,
+                  className,
+                  outline = false,
+                  variant = 'primary',
+                  onAction,
+                  url = undefined,
+                  isLoading = false,
+                  type = 'button'
+                }) {
+  const clsName = ['button', variant, className];
+  if (outline === true) clsName.push('outline');
+  if (isLoading === true) clsName.push('loading');
 
   const onActionFunc = (e) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ function Button({
         onClick={(e) => {
           onActionFunc(e);
         }}
-        className={className.join(' ')}
+        className={clsName.join(' ')}
       >
         <span>{title}</span>
         {isLoading === true && (
@@ -67,7 +68,7 @@ function Button({
     );
   } else {
     return (
-      <a href={url} className={className.join(' ')}>
+      <a href={url} className={clsName.join(' ')}>
         <span>{title}</span>
       </a>
     );
@@ -81,10 +82,12 @@ Button.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   url: PropTypes.string,
   variant: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.string,
+  className: PropTypes.string
 };
 
 Button.defaultProps = {
+  className: '',
   isLoading: false,
   onAction: undefined,
   outline: false,
