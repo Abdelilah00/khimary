@@ -7,7 +7,7 @@ export default function FeaturedCategories() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 page-width">
         <div>
           <div className="text-center">
-            <img src="/assets/homepage/banner/men-shoes.jpeg" alt="" />
+            <img src="/assets/homepage/banner/men-shoes.jpg" alt="" height={233} />
           </div>
           <h3 className="h4 uppercase mt-4 mb-4">Men shoes collection</h3>
           <div className="mb-4">
@@ -21,7 +21,7 @@ export default function FeaturedCategories() {
         </div>
         <div>
           <div>
-            <img src="/assets/homepage/banner/women-shoes.jpeg" alt="" />
+            <img src="/assets/homepage/banner/women-shoes.jpg" alt="" height={233} />
           </div>
           <h3 className="h4 uppercase mt-4 mb-4">Women shoes collection</h3>
           <div className="mb-4">
@@ -35,7 +35,7 @@ export default function FeaturedCategories() {
         </div>
         <div>
           <div>
-            <img src="/assets/homepage/banner/kid-shoes.jpeg" alt="" />
+            <img src="/assets/homepage/banner/kid-shoes.jpg" alt="" height={233} />
           </div>
           <h3 className="h4 uppercase mt-4 mb-4">Men shoes collection</h3>
           <div className="mb-4">

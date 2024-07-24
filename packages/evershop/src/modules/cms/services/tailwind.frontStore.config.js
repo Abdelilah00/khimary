@@ -3,7 +3,7 @@ module.exports = {
     extend: {
       colors: {
         white: '#ffffff',
-        primary: '#3a3a3a',
+        primary: '#f100a0',
         secondary: '#111213',
         surface: '#111213',
         onSurface: '#111213',
@@ -14,7 +14,7 @@ module.exports = {
         success: '#008060',
         decorative: '#FFC96B',
         border: '#8c9196',
-        icon: '#5c5f62',
+        icon: '#f100a0',
         divider: '#e1e3e5',
         textSubdued: '#737373',
         button: '#3a3a3a'
